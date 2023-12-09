@@ -1,4 +1,5 @@
 const users = [];
+const moment = require("moment");
 
 const userJoin = (id,username,room) =>{
     const user = {username,id,room};
@@ -22,7 +23,6 @@ const userLeave = (id)=>{
     }
 }
 
-const moment = require("moment");
 
 const formateMessage = (username,text)=>{
     return {
